@@ -1,3 +1,205 @@
-@import './_components.css';
-@import './_layout.css';
-@import './_variables.css';
+:root {
+    --body-bg: #dbeafe;
+    --main-container-bg: #eff6ff;
+    --wrong-bg: #fee2e2;
+    --color-icon: #60a5fa;
+}
+
+.main-body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--body-bg);
+}
+
+.left-container {
+    width: 10rem;
+    height: 100%;
+    overflow: hidden;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    background-color: var(--color-white);
+}
+
+.main-container {
+    width: 80vw;
+    height: 100%;
+    padding: 1.5rem;
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: var(--main-container-bg);
+}
+
+.right-container {
+    width: 45rem;
+    height: 100%;
+    overflow: hidden;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-color: var(--color-white);
+}
+
+.right-container-scroll {
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.img-logo {
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'left1 center1 right1'
+        'left2 center2 right2';
+    gap: 1.5rem;
+}
+
+.grid-container > div {
+    padding: 0.5rem;
+}
+
+.item-1, .item-2, .item-3, .item-4, .item-5, .item-6, .item-7 {
+    border-radius: 1rem;
+    transition: all 0.5s;
+}
+
+.item-hover:hover {
+    box-shadow: var(--shadow);
+}
+
+.item-1 {
+    grid-area: header;
+}
+
+.item-2 {
+    grid-area: left1;
+    background-color: var(--color-white);
+}
+
+.item-3 {
+    grid-area: center1;
+    background-color: var(--color-white);
+}
+
+.item-4 {
+    grid-area: right1;
+    background-color: var(--color-white);
+}
+
+.item-5 {
+    grid-area: left2;
+    background-color: var(--color-white);
+}
+
+.item-6 {
+    grid-area: center2;
+    background-color: var(--color-white);
+}
+
+.item-7 {
+    grid-area: right2;
+    background-color: var(--color-white);
+}
+
+.active-quiz {
+    background-color: var(--main-container-bg);
+    box-shadow: var(--shadow);
+}
+
+.search-bar {
+    width: 40%;
+    padding: 0.8rem 1.2rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 2rem;
+    background-color: var(--main-container-bg);
+}
+
+.search-bar > input {
+    width: 100%;
+    border-style: none;
+    outline-style: none;
+    background-color: var(--main-container-bg);
+}
+
+.custom-margin {
+    margin-top: 2rem;
+}
+
+.app-name {
+    margin-top: 1.5rem;
+    color: var(--color-primary-dark);
+}
+
+.quiz-container {
+    width: 100%;
+    border-radius: 1.5rem;
+}
+
+.quiz-image {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.progress-bar {
+    width: 100%;
+}
+
+.option {
+    padding: 0.5rem 1.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 2px solid var(--royalblue);
+}
+
+.option-correct {
+    background-color: var(--body-bg);
+}
+
+.option-wrong {
+    background-color: var(--wrong-bg);
+}
+
+.option-correct-icon {
+    color: var(--success);
+}
+
+.option-wrong-icon {
+    color: var(--danger);
+}
+
+.border {
+    border: 2px solid var(--royalblue);
+}
+
+.header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    color: var(--color-primary-dark);
+}
+
+.main-content {
+    height: 90vh;
+}
+
+.nav {
+    width: 5vw;
+    padding-top: 3rem;
+}
+
+.icon {
+    font-size: 3rem;
+    padding: 0.5rem;
+    color: var(--color-icon);
+    cursor: pointer;
+}
