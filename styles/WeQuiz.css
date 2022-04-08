@@ -11,6 +11,25 @@
     background-color: var(--body-bg);
 }
 
+@media screen and (max-width: 1250px) {
+    .main-body {
+        /* display: flex;
+        flex-direction: column; */
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 1.4rem !important;
+    }
+}
+
 .left-container {
     width: 10rem;
     height: 100%;
@@ -202,4 +221,12 @@
     padding: 0.5rem;
     color: var(--color-icon);
     cursor: pointer;
+}
+
+.result {
+    /* background-color: tomato; */
+}
+
+.result-heading {
+    text-align: center;
 }
