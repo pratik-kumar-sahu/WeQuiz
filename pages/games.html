@@ -1,177 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://fuzz-ui.netlify.app/styles/FuzzUI.css">
-        <link rel="stylesheet" href="../styles/WeQuiz.css" />
-        <title>Games</title>
-    </head>
-    <body>
-        <main class="main-body flex-row p-4">
-            <section class="left-container flex-column flex-align-center p-2">
-                <a href="../index.html"><img class="img-logo mt-2" src="../assets/images/logo.png" alt="WeQuiz"></a>
-                <div class="custom-margin mb-2"><a href="../index.html"><ion-icon class="icon" name="home"></ion-icon></a></div>
-                <!-- <div class="my-2"><ion-icon class="icon" name="person-circle"></ion-icon></div> -->
-                <div class="my-2"><a href="#"><ion-icon class="icon" name="game-controller"></ion-icon></a></div>
-                <div class="my-2"><ion-icon class="icon" name="settings"></ion-icon></div>
-            </section>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://fuzz-ui.netlify.app/styles/FuzzUI.css" />
+		<link rel="stylesheet" href="../styles/WeQuiz.css" />
+		<title>Games</title>
+	</head>
+	<body>
+		<main class="main-body flex-row p-4">
+			<section class="left-container flex-column flex-align-center p-2">
+				<a href="../index.html"
+					><img class="img-logo mt-2" src="../assets/images/logo.png" alt="WeQuiz"
+				/></a>
+				<div class="custom-margin mb-2">
+					<a href="../index.html"><ion-icon class="icon" name="home"></ion-icon></a>
+				</div>
+				<div class="my-2">
+					<a href="#"><ion-icon class="icon" name="game-controller"></ion-icon></a>
+				</div>
+                <div class="my-2">
+					<a href="./results.html"><ion-icon class="icon" name="trophy"></ion-icon></a>
+				</div>
+				<div class="my-2"><ion-icon class="icon" name="settings"></ion-icon></div>
+			</section>
 
-            <section class="main-container grid-container">
-                <div class="item-1 flex-j-a-center">
-                    <label class="search-bar flex-j-space-a-center" for="search">
-                        <input type="search" name="search" id="search" placeholder="Search..." />
-                        <ion-icon name="search-outline"></ion-icon>
-                    </label>
-                </div>
-                <div class="item-hover item-2 active-quiz">
-                    <div class="quiz-container flex-column p-5">
-                        <div>
-                            <img class="quiz-image" src="../assets/images/scene1.png" alt="scene1" />
-                        </div>
-                        <div>
-                            <div class="flex-j-space-a-center">
-                                <h3>Movies Quiz</h3>
-                                <ion-icon class="icon" name="pause"></ion-icon>
-                            </div>
-                            <p>Algebra is the most important thing you'll ever learn in your life.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-hover item-3">
-                    <div class="quiz-container flex-column p-5">
-                        <div>
-                            <img class="quiz-image" src="../assets/images/scene2.png" alt="scene1" />
-                        </div>
-                        <div>
-                            <div class="flex-j-space-a-center">
-                                <h3>Tech Quiz</h3>
-                                <ion-icon class="icon" name="play"></ion-icon>
-                            </div>
-                            <p>Algebra is the most important thing you'll ever learn in your life.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-hover item-4">
-                    <div class="quiz-container flex-column p-5">
-                        <div>
-                            <img class="quiz-image" src="../assets/images/scene3.png" alt="scene1" />
-                        </div>
-                        <div>
-                            <div class="flex-j-space-a-center">
-                                <h3>World Quiz</h3>
-                                <ion-icon class="icon" name="play"></ion-icon>
-                            </div>
-                            <p>Algebra is the most important thing you'll ever learn in your life.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-hover item-5">
-                    <div class="quiz-container flex-column p-5">
-                        <div>
-                            <img class="quiz-image" src="../assets/images/scene4.png" alt="scene1" />
-                        </div>
-                        <div>
-                            <div class="flex-j-space-a-center">
-                                <h3>Songs Quiz</h3>
-                                <ion-icon class="icon" name="play"></ion-icon>
-                            </div>
-                            <p>Algebra is the most important thing you'll ever learn in your life.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-hover item-6">
-                    <div class="quiz-container flex-column p-5">
-                        <div>
-                            <img class="quiz-image" src="../assets/images/scene5.png" alt="scene1" />
-                        </div>
-                        <div>
-                            <div class="flex-j-space-a-center">
-                                <h3>Games Quiz</h3>
-                                <ion-icon class="icon" name="play"></ion-icon>
-                            </div>
-                            <p>Algebra is the most important thing you'll ever learn in your life.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-hover item-7">
-                    <div class="quiz-container flex-column p-5">
-                        <div>
-                            <img class="quiz-image" src="../assets/images/scene6.png" alt="scene1" />
-                        </div>
-                        <div>
-                            <div class="flex-j-space-a-center">
-                                <h3>Chemistry Quiz</h3>
-                                <ion-icon class="icon" name="play"></ion-icon>
-                            </div>
-                            <p>Algebra is the most important thing you'll ever learn in your life.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+			<section class="main-container grid-container">
+				<div class="item-1 flex-j-a-center">
+					<label class="search-bar flex-j-space-a-center" for="search">
+						<input type="search" name="search" id="search" placeholder="Search..." />
+						<ion-icon name="search-outline"></ion-icon>
+					</label>
+				</div>
+				<div class="item-hover item-2 active-quiz">
+					<div class="quiz-container flex-column p-5">
+						<div>
+							<img
+								class="quiz-image"
+								src="../assets/images/scene1.png"
+								alt="scene1"
+							/>
+						</div>
+						<div>
+							<div class="flex-j-space-a-center">
+								<h3>Movies Quiz</h3>
+								<ion-icon class="icon" name="pause"></ion-icon>
+							</div>
+							<p>
+								Algebra is the most important thing you'll ever learn in your life.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="item-hover item-3">
+					<div class="quiz-container flex-column p-5">
+						<div>
+							<img
+								class="quiz-image"
+								src="../assets/images/scene2.png"
+								alt="scene1"
+							/>
+						</div>
+						<div>
+							<div class="flex-j-space-a-center">
+								<h3>Tech Quiz</h3>
+								<ion-icon class="icon" name="play"></ion-icon>
+							</div>
+							<p>
+								Algebra is the most important thing you'll ever learn in your life.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="item-hover item-4">
+					<div class="quiz-container flex-column p-5">
+						<div>
+							<img
+								class="quiz-image"
+								src="../assets/images/scene3.png"
+								alt="scene1"
+							/>
+						</div>
+						<div>
+							<div class="flex-j-space-a-center">
+								<h3>World Quiz</h3>
+								<ion-icon class="icon" name="play"></ion-icon>
+							</div>
+							<p>
+								Algebra is the most important thing you'll ever learn in your life.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="item-hover item-5">
+					<div class="quiz-container flex-column p-5">
+						<div>
+							<img
+								class="quiz-image"
+								src="../assets/images/scene4.png"
+								alt="scene1"
+							/>
+						</div>
+						<div>
+							<div class="flex-j-space-a-center">
+								<h3>Songs Quiz</h3>
+								<ion-icon class="icon" name="play"></ion-icon>
+							</div>
+							<p>
+								Algebra is the most important thing you'll ever learn in your life.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="item-hover item-6">
+					<div class="quiz-container flex-column p-5">
+						<div>
+							<img
+								class="quiz-image"
+								src="../assets/images/scene5.png"
+								alt="scene1"
+							/>
+						</div>
+						<div>
+							<div class="flex-j-space-a-center">
+								<h3>Games Quiz</h3>
+								<ion-icon class="icon" name="play"></ion-icon>
+							</div>
+							<p>
+								Algebra is the most important thing you'll ever learn in your life.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="item-hover item-7">
+					<div class="quiz-container flex-column p-5">
+						<div>
+							<img
+								class="quiz-image"
+								src="../assets/images/scene6.png"
+								alt="scene1"
+							/>
+						</div>
+						<div>
+							<div class="flex-j-space-a-center">
+								<h3>Chemistry Quiz</h3>
+								<ion-icon class="icon" name="play"></ion-icon>
+							</div>
+							<p>
+								Algebra is the most important thing you'll ever learn in your life.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-            <section class="right-container flex-column">
-                <div class="p-5 mx-5">
-                    <progress class="progress-bar" id="file" value="60" max="100"> 32% </progress>
-                    <div class="flex-j-space-a-center">
-                        <p>Attempted: <strong>3/5</strong></p>
-                        <p>Score: <strong>+30</strong></p>
-                    </div>
-                </div>
-                <div class="right-container-scroll px-5 pb-5 mx-5">
-                    <div>
-                        <p><strong>1.</strong> For which of the following disciplines is Nobel Prize awarded?</p>
-                        <div class="option my-3 option-correct flex-j-space-a-center">a. Physics and Chemistry <ion-icon class="option-correct-icon" name="checkmark-circle"></ion-icon></div>
-                        <div class="option my-3 option-wrong flex-j-space-a-center">b. Physiology or Medicine <ion-icon class="option-wrong-icon" name="close-circle"></ion-icon></div>
-                        <div class="option my-3">c. Literature, Peace and Economics</div>
-                        <div class="option my-3">d. All of the above</div>
-                    </div>
+			<section class="right-container flex-column">
+				<div class="p-5 mx-5">
+					<progress class="progress-bar" id="file" value="60" max="100">32%</progress>
+					<div class="flex-j-space-a-center">
+						<p>Attempted: <strong>3/5</strong></p>
+						<p>Score: <strong>+30</strong></p>
+					</div>
+				</div>
+				<div class="right-container-scroll px-5 pb-5 mx-5">
+					<div>
+						<p>
+							<strong>1.</strong> For which of the following disciplines is Nobel
+							Prize awarded?
+						</p>
+						<div class="option my-3 option-correct flex-j-space-a-center">
+							a. Physics and Chemistry
+							<ion-icon
+								class="option-correct-icon"
+								name="checkmark-circle"
+							></ion-icon>
+						</div>
+						<div class="option my-3 option-wrong flex-j-space-a-center">
+							b. Physiology or Medicine
+							<ion-icon class="option-wrong-icon" name="close-circle"></ion-icon>
+						</div>
+						<div class="option my-3">c. Literature, Peace and Economics</div>
+						<div class="option my-3">d. All of the above</div>
+					</div>
 
-                    <hr class="my-5">
+					<hr class="my-5" />
 
-                    <div>
-                        <p><strong>2.</strong> Hitler party which came into power in 1933 is known as?</p>
-                        <div class="option my-3 option-correct flex-j-space-a-center">a. Labour Party <ion-icon class="option-correct-icon" name="checkmark-circle"></ion-icon></div>
-                        <div class="option my-3 option-wrong flex-j-space-a-center">b. Nazi Party <ion-icon class="option-wrong-icon" name="close-circle"></ion-icon></div>
-                        <div class="option my-3">c. Ku-Klux-Klan</div>
-                        <div class="option my-3">d. Democratic Party</div>
-                    </div>
+					<div>
+						<p>
+							<strong>2.</strong> Hitler party which came into power in 1933 is known
+							as?
+						</p>
+						<div class="option my-3 option-correct flex-j-space-a-center">
+							a. Labour Party
+							<ion-icon
+								class="option-correct-icon"
+								name="checkmark-circle"
+							></ion-icon>
+						</div>
+						<div class="option my-3 option-wrong flex-j-space-a-center">
+							b. Nazi Party
+							<ion-icon class="option-wrong-icon" name="close-circle"></ion-icon>
+						</div>
+						<div class="option my-3">c. Ku-Klux-Klan</div>
+						<div class="option my-3">d. Democratic Party</div>
+					</div>
 
-                    <hr class="my-5">
+					<hr class="my-5" />
 
-                    <div>
-                        <p><strong>3.</strong> For which of the following disciplines is Nobel Prize awarded?</p>
-                        <div class="option my-3 option-correct flex-j-space-a-center">a. Physics and Chemistry <ion-icon class="option-correct-icon" name="checkmark-circle"></ion-icon></div>
-                        <div class="option my-3 option-wrong flex-j-space-a-center">b. Physiology or Medicine <ion-icon class="option-wrong-icon" name="close-circle"></ion-icon></div>
-                        <div class="option my-3">c. Literature, Peace and Economics</div>
-                        <div class="option my-3">d. All of the above</div>
-                    </div>
+					<div>
+						<p>
+							<strong>3.</strong> For which of the following disciplines is Nobel
+							Prize awarded?
+						</p>
+						<div class="option my-3 option-correct flex-j-space-a-center">
+							a. Physics and Chemistry
+							<ion-icon
+								class="option-correct-icon"
+								name="checkmark-circle"
+							></ion-icon>
+						</div>
+						<div class="option my-3 option-wrong flex-j-space-a-center">
+							b. Physiology or Medicine
+							<ion-icon class="option-wrong-icon" name="close-circle"></ion-icon>
+						</div>
+						<div class="option my-3">c. Literature, Peace and Economics</div>
+						<div class="option my-3">d. All of the above</div>
+					</div>
 
-                    <hr class="my-5">
+					<hr class="my-5" />
 
-                    <div>
-                        <p><strong>4.</strong> Hitler party which came into power in 1933 is known as?</p>
-                        <div class="option my-3">a. Labour Party</div>
-                        <div class="option my-3">b. Nazi Party</div>
-                        <div class="option my-3">c. Ku-Klux-Klan</div>
-                        <div class="option my-3">d. Democratic Party</div>
-                    </div>
+					<div>
+						<p>
+							<strong>4.</strong> Hitler party which came into power in 1933 is known
+							as?
+						</p>
+						<div class="option my-3">a. Labour Party</div>
+						<div class="option my-3">b. Nazi Party</div>
+						<div class="option my-3">c. Ku-Klux-Klan</div>
+						<div class="option my-3">d. Democratic Party</div>
+					</div>
 
-                    <hr class="my-5">
+					<hr class="my-5" />
 
-                    <div>
-                        <p><strong>5.</strong> For which of the following disciplines is Nobel Prize awarded?</p>
-                        <div class="option my-3">a. Physics and Chemistry</div>
-                        <div class="option my-3">b. Physiology or Medicine</div>
-                        <div class="option my-3">c. Literature, Peace and Economics</div>
-                        <div class="option my-3">d. All of the above</div>
-                    </div>
-                </div>
-            </section>
-        </main>
+					<div>
+						<p>
+							<strong>5.</strong> For which of the following disciplines is Nobel
+							Prize awarded?
+						</p>
+						<div class="option my-3">a. Physics and Chemistry</div>
+						<div class="option my-3">b. Physiology or Medicine</div>
+						<div class="option my-3">c. Literature, Peace and Economics</div>
+						<div class="option my-3">d. All of the above</div>
+					</div>
+				</div>
+			</section>
+		</main>
 
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    </body>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	</body>
 </html>
